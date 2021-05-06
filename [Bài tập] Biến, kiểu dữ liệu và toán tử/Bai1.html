@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập điểm sinh viên</title>
+</head>
+<body>
+    <script>
+        let inputPhysical;
+        let inputChemistry;
+        let inputBiological;
+
+        inputPhysical = prompt("inputPhysical");
+        inputChemistry = prompt("inputChemistry");
+        inputBiological = prompt("inputBiological");
+
+        let physical = parseFloat(inputPhysical);
+        let chemistry = parseFloat(inputChemistry);
+        let biological = parseFloat(inputBiological);
+
+        let average = (physical + chemistry + biological) / 3;
+        let total = physical + chemistry + biological;
+
+        document.write('Average: ' + average);
+        document.write('<br/>');
+        document.write('Total: ' + total);
+    </script>
+</body>
+</html>
