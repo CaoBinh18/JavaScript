@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+    <style>
+        table {
+            text-align: center;
+        }
+        td {
+          padding-right: 80px;
+        }
+       button {
+        background-color: rgb(42, 42, 216); 
+        color: white; 
+        font-size: 14px;
+        padding: 5px 14px;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>Chuyển đổi tiền tệ</h1>
+    <table>
+        <tr style="font-weight: bold;">
+            <td>Amount</td>
+            <td>From Currency</td>
+            <td>To Currency</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="amount" style="padding: 5px;">
+            </td>
+            <td>
+                <select id="fromCurrency" style="width: 120px; padding: 5px;">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="toCurrency" style="width: 120px; padding: 5px;"> 
+                    <option value="USD">USD</option>
+                    <option value="VND">VietNam</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="convert()">Convert</button>
+            </td>
+        </tr>
+    </table>    
+        
+            <p style="color: blue;">Result: <span  colspan="2" id="result"></span> VND</p>
+    <script src="convert.js"></script>
+</body>
+
+</html>
