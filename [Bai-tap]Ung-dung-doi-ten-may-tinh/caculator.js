@@ -1,31 +1,31 @@
-let text1 = document.getElementById("text1").value;
-let text2 = document.getElementById("text2").value; 
-let result = document.getElementById("result").value;
+let numberone = document.getElementById('numberone').value;
+let numbertwo = document.getElementById('numbertwo').value; 
+let result = document.getElementById('result').value;
 function addition() {
-    result = document.getElementById("result").value;
-    text1 = parseInt(document.getElementById("text1").value);
-    text2 = parseInt(document.getElementById("text2").value);
-    result = text1 + text2;
-    document.getElementById("result").innerText= (result);
+    result = document.getElementById('result').value;
+    numberone = parseInt(document.getElementById('numberone').value);
+    numbertwo = parseInt(document.getElementById('numbertwo').value);
+    result = (numberone + numbertwo);
+    document.getElementById('result').innerText= ('Result Addition:') + (result);
 }
 function subtraction() {
     result = document.getElementById("result").value;
-    text1 = parseInt(document.getElementById("text1").value);
-    text2 = parseInt(document.getElementById("text2").value);
-    result = text1 - text2;
+    numberone = parseInt(document.getElementById("numberone").value);
+    numbertwo = parseInt(document.getElementById("numbertwo").value);
+    result = numberone - numbertwo;
     document.getElementById("result").innerText = (result);
 }
 function multiplication() {
     result = document.getElementById("result").value;
-    text1 = parseInt(document.getElementById("text1").value);
-    text2 = parseInt(document.getElementById("text2").value);
-    result = text1 * text2;
+    numberone = parseInt(document.getElementById("numberone").value);
+    numbertwo = parseInt(document.getElementById("numbertwo").value);
+    result = numberone * numbertwo;
     document.getElementById("result").innerText = (result);
 }
 function division() {
     result = document.getElementById("result").value;
-    text1 = parseInt(document.getElementById("text1").value);
-    text2 = parseInt(document.getElementById("text2").value);
-    result = text1 / text2;
+    numberone = parseInt(document.getElementById("numberone").value);
+    numbertwo = parseInt(document.getElementById("numbertwo").value);
+    result = numberone / numbertwo;
     document.getElementById("result").innerText = (result);
 }
