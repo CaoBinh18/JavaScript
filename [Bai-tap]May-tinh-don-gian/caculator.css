@@ -1,0 +1,17 @@
+table {
+    border-width: 5px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+button {
+    font-size: 20px;
+    color: blue;
+    padding: 12px 22px;
+}
+input {
+    width: 370px;
+    height: 22px;
+    padding: auto;
+    text-align: right;
+}
