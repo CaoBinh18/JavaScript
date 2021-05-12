@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Array</title>
+</head>
+<body>
+    <script>
+    let x = [4, 91 ,-6, 14, 96, 28];
+    let first = 0;
+    let last = x.length - 1;
+    while (first < last) {
+    let a = x[first];
+    x[first] = x[last];
+    x[last] = a;
+    first++;
+    last--;
+}
+document.write(x);
+</script>
+</body>
+</html>
