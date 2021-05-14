@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập số</title>
+</head>
+
+<body>
+    <script>
+        let num = prompt('Nhập vào: ');
+        const arr = num.toString();
+        const result = [arr[0]];
+        for (let i = 1; i < arr.length; i++) {
+            if ((arr[i] % 2 === 0) && (arr[i - 1] % 2 === 0)) {
+                result.push('-', arr[i])
+            } else {
+                result.push(arr[i]);
+            }
+        }
+        document.write(result.join(''));
+    </script>
+</body>
+
+</html>
