@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+
+<body>
+    <div>
+        <h1>Temperature Converter</h1>
+    </div>
+    <div>
+        Type a value in the Fahrenheit field to convert the valu
+    </div>
+    <div>
+        <label>Fahrenheit</label>
+        <input type="number" oninput="Converter(this.value)"
+        onchange="Converter(this.value)"> 
+    </div>
+    <div>Celcius: <span id="result"></span></div>
+    <script>
+        function Converter(F) {          
+            F = parseFloat(F);
+            document.getElementById('result').innerHTML = (F-32) / 1.8;
+        }
+    </script>
+</body>
+
+</html>
