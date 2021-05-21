@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5</title>
+</head>
+
+<body>
+    <script>
+        let star = ['Polaris', 'Aldebaran', 'Deneb',
+            'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus',
+            'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function searchStar(string) {
+            result = false;
+            let i = 0;
+            for (i = 0; i < star.length; i++) {
+                if (string == star[i]) {
+                    result = true;
+                    break;
+                }
+            }
+            if (result) {
+                result = alert(`Stars ${star[i]} is: ${constellation[i]}`);
+            } else {
+                result = alert(`Không có trong danh sách`);
+
+            }
+            return result;
+        }
+        let name = prompt('Nhập star');
+        searchStar(name);
+    </script>
+</body>
+
+</html>
