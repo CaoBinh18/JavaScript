@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Do you love me</p>
+    <input type="button" id="yes" value="YES">
+    <input type="button" id="no" value="NO">
+    <script>
+        let buttonYes = document.getElementById("yes");
+    buttonYes.addEventListener("click", yesFunc);
+    function yesFunc(){
+        alert ("Yes. you are right");
+    }
+
+
+let buttonNo = document.getElementById("no");
+    buttonNo.addEventListener("mouseover", noFunc);
+   
+    function noFunc() {
+        let x = Math.floor(Math.random() * window.innerWidth);
+        let y = Math.floor(Math.random() * window.innerHeight);
+        buttonNo.style.position = "absolute";
+        buttonNo.style.left = x + "px";
+        buttonNo.style.top = y + "px";
+        
+    }
+    </script>
+</body>
+</html>
