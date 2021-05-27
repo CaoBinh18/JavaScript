@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ Điển</title>
+</head>
+<body>
+    <script>
+        let eng = ['apple', 'banana', 'orange', 'mango', 'watermelon'];
+        let viet = ['quả táo', 'quả chuối', 'quả cam', 'quả xoài', 'quả dưa hấu'];
+        function search(string) {
+            result = false;
+            let i = 0;
+            for (i = 0; i < eng.length; i++) {
+                if (string == eng[i]) {
+                    result = true;
+                    break;
+                }
+            }
+            if (result) {
+                result = alert(`Dịch từ tiếng anh: ${eng[i]} sang tiếng Việt: ${viet[i]}`);
+            } else {
+                result = alert(`Không có trong danh sách`);
+
+            }
+            return result;
+        }
+        let name = prompt('Nhập từ: ');
+        search(name);
+        
+    </script>
+</body>
+</html>
