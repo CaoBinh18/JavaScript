@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="border:1px solid #d3d3d3;"></canvas>
+    <script>
+        let Rectangle = function (a, b) {
+            // this.x = x;
+            // this.y = y;
+            this.a = a;
+            this.geta = function() {
+                return a;
+            }
+            this.b = b;
+            this.getb = function() {
+                return b;
+            }
+            this.getPeri = function() {
+                return (a+b)*2;
+            }
+            this.getArea = function() {
+                return a*b;
+            }
+        }
+
+        function createRactangle() {
+            let ctx = document.getElementById('myCanvas').getContext('2d');
+            let rectangle = new Rectangle();
+            ctx.moveTo(30, 30);
+            ctx.lineTo(40, 40);
+            ctx.lineTo(this.a, this.b);
+            ctx.lineTo(40, 40);
+            ctx.lineTo(this.b, this.a);
+        }
+        createRactangle();
+        let rectangle = new Rectangle(5, 3);
+        let area = rectangle.getArea();
+        let peri = rectangle.getPeri();
+        alert("Area: " + area + " and Perimeter: " + peri);
+    </script>
+</body>
+</html>
